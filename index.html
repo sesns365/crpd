@@ -12,7 +12,6 @@
         /* 基礎設定 */
         :root {
             --highlight-color: #fef08a; /* 黃色高亮 */
-            --focus-border: #2563eb;
         }
 
         html {
@@ -76,7 +75,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* 底部導航列 - 調整為更緊湊 */
+        /* 底部導航列 */
         .bottom-nav {
             position: fixed;
             bottom: 0;
@@ -84,16 +83,15 @@
             width: 100%;
             background-color: white;
             border-top: 1px solid #e5e7eb;
-            padding: 0.5rem 1rem; /* 減少內距 */
+            padding: 0.5rem 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             z-index: 40;
             box-shadow: 0 -2px 4px -1px rgba(0, 0, 0, 0.05);
-            height: 60px; /* 固定高度，避免過大 */
+            height: 60px;
         }
 
-        /* 為了不被底部導航擋住內容，main 底部留白也相應減少 */
         main {
             padding-bottom: 70px !important;
         }
@@ -173,14 +171,14 @@
         
         <!-- 頁面 1: 封面 -->
         <div class="page-slide active" id="page-1">
-             <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r shadow-sm readable-block mb-8" data-text="歡迎使用 CRPD 易讀網頁。這裡有6頁，您可以按右下角的下一頁按鈕來翻頁。點擊任何文字，我就會唸給您聽。">
+             <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r shadow-sm readable-block mb-8" data-text="歡迎使用 CRPD 易讀網頁。這裡共有7頁，包含所有公約的介紹與資訊。您可以按右下角的下一頁按鈕來翻頁。點擊任何文字，我就會唸給您聽。">
                 <div class="flex gap-4">
                     <div class="flex-shrink-0 text-blue-500">
                         <i data-lucide="info" class="w-8 h-8"></i>
                     </div>
                     <div>
                         <h2 class="font-bold text-lg mb-1">使用說明</h2>
-                        <p class="text-base text-gray-700">點擊文字我會唸給您聽，下方按鈕可翻頁。</p>
+                        <p class="text-base text-gray-700">點擊文字會唸給您聽，共7頁，請按下一頁閱讀。</p>
                     </div>
                 </div>
             </div>
@@ -282,7 +280,7 @@
         <!-- 頁面 4: 友善環境 1 (認識多元性) -->
         <div class="page-slide" id="page-4">
             <section class="bg-white rounded-2xl shadow-sm overflow-hidden">
-                <div class="bg-orange-500 p-6 readable-block" data-text="我們可以如何營造更友善共融的環境？第一點，認識身心障礙者的多元性。">
+                <div class="bg-orange-500 p-6 readable-block" data-text="我們可以如何營造更友善共融的環境？第一點，認識身心障礙者的多元性，以平等態度互動。">
                     <h2 class="text-3xl font-bold text-white flex items-center gap-3">
                         <i data-lucide="heart-handshake" class="w-10 h-10"></i>
                         營造友善環境 (1/3)
@@ -300,19 +298,19 @@
                             <p class="text-lg">提供協助前應 <span class="font-bold">徵詢</span> 障礙者是否需要協助、如何協助，不應假定障礙者一定都需要幫助。</p>
                         </div>
                         
-                        <div class="readable-block bg-orange-50 p-6 rounded-xl border border-orange-100" data-text="例如：與隱性障礙者溝通時，以明確、簡單的方式表達，避免艱澀難懂的文字，並減少外在刺激，有助於其集中注意力。">
+                        <div class="readable-block bg-orange-50 p-6 rounded-xl border border-orange-100" data-text="例如：與隱性障礙者溝通時，以明確、簡單的方式表達，避免艱澀難懂的文字，並減少外在刺激（如環境噪音、燈光、人流等），有助於其集中注意力或緩和情緒。">
                             <span class="font-bold text-orange-600 text-lg block mb-2">💡 隱性障礙者溝通</span>
-                            <p class="text-lg">溝通時以明確、簡單的方式表達，減少外在刺激（如噪音、燈光），有助於其集中注意力。</p>
+                            <p class="text-lg">溝通時以明確、簡單的方式表達，避免艱澀難懂文字，減少外在刺激（如噪音、燈光、人流），有助於其集中注意力或緩和情緒。</p>
                         </div>
 
-                        <div class="readable-block bg-orange-50 p-6 rounded-xl border border-orange-100" data-text="例如：與聽覺障礙者溝通時，請面對面，稍微放慢語速，勿遮住嘴型。">
+                        <div class="readable-block bg-orange-50 p-6 rounded-xl border border-orange-100" data-text="例如：與聽覺障礙者溝通時，請面對面，稍微放慢語速，以一般語調與聲量表達清楚，勿遮住嘴型。">
                             <span class="font-bold text-orange-600 text-lg block mb-2">💡 聽覺障礙者溝通</span>
-                            <p class="text-lg">請面對面，稍微放慢語速，表達清楚，<span class="font-bold">勿遮住嘴型</span>。</p>
+                            <p class="text-lg">請面對面，稍微放慢語速，以一般語調與聲量表達清楚，<span class="font-bold">勿遮住嘴型</span>。</p>
                         </div>
 
                         <div class="readable-block bg-orange-50 p-6 rounded-xl border border-orange-100" data-text="例如：學習人導法，口訣是問、拍、引、報。遇到需要協助的視覺障礙者時，能夠正確且安全引導。">
                             <span class="font-bold text-orange-600 text-lg block mb-2">💡 視覺障礙者引導 (人導法)</span>
-                            <p class="text-lg">學習「人導法」(口訣:問拍引報)，正確且安全引導。</p>
+                            <p class="text-lg">學習「人導法」(口訣:問拍引報)，遇到需要協助的視覺障礙者時，能夠正確且安全引導。</p>
                         </div>
                     </div>
                 </div>
@@ -343,7 +341,7 @@
                             </div>
                             <div class="bg-red-50 p-6 readable-block" data-text="爭議說法：殘障者、傷殘者、殘疾者、殘廢者。">
                                 <div class="flex items-center gap-2 mb-2 text-red-700 font-bold text-lg"><i data-lucide="thumbs-down" class="w-6 h-6"></i> 爭議說法</div>
-                                <div class="text-xl text-gray-500">殘障者、殘廢者...</div>
+                                <div class="text-xl text-gray-500">殘障者、傷殘者、殘疾者、殘廢者</div>
                             </div>
                         </div>
 
@@ -359,7 +357,19 @@
                             </div>
                         </div>
 
-                         <!-- Card 3 -->
+                        <!-- Card 3 -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                            <div class="bg-blue-50 p-6 readable-block md:border-r border-gray-200" data-text="建議說法：智能障礙者、精神障礙者、心理社會障礙者。">
+                                <div class="flex items-center gap-2 mb-2 text-blue-700 font-bold text-lg"><i data-lucide="thumbs-up" class="w-6 h-6"></i> 建議說法</div>
+                                <div class="text-xl font-medium">智能障礙者、精神障礙者、心理社會障礙者</div>
+                            </div>
+                            <div class="bg-red-50 p-6 readable-block" data-text="爭議說法：低能、智能低下、白痴、腦殘、傻瓜、瘋癲、瘋子、神經病、瘋漢。">
+                                <div class="flex items-center gap-2 mb-2 text-red-700 font-bold text-lg"><i data-lucide="thumbs-down" class="w-6 h-6"></i> 爭議說法</div>
+                                <div class="text-xl text-gray-500">低能、智能低下、白痴、腦殘、傻瓜、瘋癲、瘋子、神經病、瘋漢</div>
+                            </div>
+                        </div>
+
+                         <!-- Card 4 -->
                          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                             <div class="bg-blue-50 p-6 readable-block md:border-r border-gray-200" data-text="建議說法：視覺障礙者。">
                                 <div class="flex items-center gap-2 mb-2 text-blue-700 font-bold text-lg"><i data-lucide="thumbs-up" class="w-6 h-6"></i> 建議說法</div>
@@ -371,7 +381,7 @@
                             </div>
                         </div>
 
-                         <!-- Card 4 -->
+                         <!-- Card 5 -->
                          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-gray-200 rounded-2xl overflow-hidden shadow-sm">
                             <div class="bg-blue-50 p-6 readable-block md:border-r border-gray-200" data-text="建議說法：聽覺障礙者、聾人。">
                                 <div class="flex items-center gap-2 mb-2 text-blue-700 font-bold text-lg"><i data-lucide="thumbs-up" class="w-6 h-6"></i> 建議說法</div>
@@ -382,6 +392,29 @@
                                 <div class="text-xl text-gray-500">聾子</div>
                             </div>
                         </div>
+
+                         <!-- Card 6 -->
+                         <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-2 border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+                            <div class="bg-blue-50 p-6 readable-block md:border-r border-gray-200" data-text="建議說法：口語障礙者。">
+                                <div class="flex items-center gap-2 mb-2 text-blue-700 font-bold text-lg"><i data-lucide="thumbs-up" class="w-6 h-6"></i> 建議說法</div>
+                                <div class="text-xl font-medium">口語障礙者</div>
+                            </div>
+                            <div class="bg-red-50 p-6 readable-block" data-text="爭議說法：啞巴、喑啞。">
+                                <div class="flex items-center gap-2 mb-2 text-red-700 font-bold text-lg"><i data-lucide="thumbs-down" class="w-6 h-6"></i> 爭議說法</div>
+                                <div class="text-xl text-gray-500">啞巴、喑啞</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 補充提醒 -->
+                    <div class="mt-4 readable-block bg-yellow-50 p-6 rounded-2xl border border-yellow-200" data-text="提醒您：提到非身心障礙者時，請避免使用正常人，以免暗示障礙者是不正常的。不應把障礙類別當作貶低別人的用語。">
+                        <h4 class="font-bold text-yellow-700 mb-2 flex items-center gap-2 text-lg">
+                            <i data-lucide="alert-triangle" class="w-5 h-5"></i> 提醒您
+                        </h4>
+                        <ul class="list-disc list-inside space-y-2 text-lg">
+                            <li>提到非身心障礙者時，請避免使用「正常人」，以免暗示障礙者是不正常的。</li>
+                            <li>不應把障礙類別當作貶低別人的用語。</li>
+                        </ul>
                     </div>
 
                     <!-- 小百科 -->
@@ -392,7 +425,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div class="bg-white p-4 rounded-xl shadow-sm text-center text-lg">視障者 <span class="text-purple-300 mx-2">↔</span> 明眼人</div>
                             <div class="bg-white p-4 rounded-xl shadow-sm text-center text-lg">聽障者 <span class="text-purple-300 mx-2">↔</span> 聽人</div>
-                            <div class="bg-white p-4 rounded-xl shadow-sm text-center text-lg">輪椅者 <span class="text-purple-300 mx-2">↔</span> 直立人</div>
+                            <div class="bg-white p-4 rounded-xl shadow-sm text-center text-lg">輪椅使用者 <span class="text-purple-300 mx-2">↔</span> 直立人</div>
                         </div>
                     </div>
                 </div>
@@ -436,16 +469,75 @@
                             <p class="text-xl pt-1">讓聽覺障礙者透過手語翻譯或是同步聽打瞭解資訊。</p>
                         </div>
 
-                         <div class="readable-block bg-orange-50 p-6 rounded-2xl border border-orange-100 flex items-start gap-6" data-text="提供心智障礙者易讀資訊，把複雜困難的資訊轉譯成容易理解的內容。">
+                         <div class="readable-block bg-orange-50 p-6 rounded-2xl border border-orange-100 flex items-start gap-6" data-text="提供心智障礙者易讀資訊，把複雜困難的資訊轉譯成容易理解的內容，以利接收資訊並自主表達意見。">
                             <div class="bg-white p-3 rounded-full shadow-sm text-orange-500 flex-shrink-0">
                                 <i data-lucide="book-open-check" class="w-8 h-8"></i>
                              </div>
-                            <p class="text-xl pt-1">提供心智障礙者易讀資訊，把複雜困難的資訊轉譯成容易理解的內容。</p>
+                            <p class="text-xl pt-1">提供心智障礙者易讀資訊(把複雜困難的資訊轉譯成容易理解的內容)，以利接收資訊並自主表達意見。</p>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
+
+         <!-- 頁面 7: 更多資訊 -->
+         <div class="page-slide" id="page-7">
+            <section class="bg-white rounded-2xl shadow-sm overflow-hidden h-full">
+                <div class="bg-teal-600 p-6 readable-block" data-text="更多資訊與資源。">
+                    <h2 class="text-3xl font-bold text-white flex items-center gap-3">
+                        <i data-lucide="link" class="w-10 h-10"></i>
+                        更多資訊與資源
+                    </h2>
+                </div>
+                <div class="p-8 space-y-6">
+                    <div class="readable-block bg-teal-50 p-6 rounded-2xl border border-teal-100" data-text="CRPD資訊網。提供公約相關法規、報告與活動訊息。">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-2">🌐 CRPD資訊網</h3>
+                        <p class="text-xl text-gray-700 mb-4">提供公約相關法規、報告與活動訊息。</p>
+                        <a href="https://crpd.sfaa.gov.tw/" target="_blank" onclick="event.stopPropagation()" class="inline-flex items-center gap-2 bg-teal-600 text-white px-5 py-3 rounded-xl font-bold hover:bg-teal-700 transition shadow-sm text-lg">
+                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                            前往網站
+                        </a>
+                    </div>
+
+                    <div class="readable-block bg-teal-50 p-6 rounded-2xl border border-teal-100" data-text="宣導專區。各種文宣、影片與教材下載。">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-2">📢 宣導專區</h3>
+                        <p class="text-xl text-gray-700 mb-4">各種文宣、影片與教材下載。</p>
+                        <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletinList&p=b_1&page=1&rows=15&c=G&t=G" target="_blank" onclick="event.stopPropagation()" class="inline-flex items-center gap-2 bg-teal-600 text-white px-5 py-3 rounded-xl font-bold hover:bg-teal-700 transition shadow-sm text-lg">
+                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                            開啟連結
+                        </a>
+                    </div>
+
+                    <div class="readable-block bg-teal-50 p-6 rounded-2xl border border-teal-100" data-text="易讀專區。提供容易閱讀理解的公約資訊。">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-2">📖 易讀專區</h3>
+                        <p class="text-xl text-gray-700 mb-4">提供容易閱讀理解的公約資訊。</p>
+                        <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletinList&p=e_1&page=1&rows=15&c=K&t=K" target="_blank" onclick="event.stopPropagation()" class="inline-flex items-center gap-2 bg-teal-600 text-white px-5 py-3 rounded-xl font-bold hover:bg-teal-700 transition shadow-sm text-lg">
+                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                            開啟連結
+                        </a>
+                    </div>
+
+                    <div class="readable-block bg-teal-50 p-6 rounded-2xl border border-teal-100" data-text="認識身心障礙者的多元性。瞭解不同障礙類別的特質與需求。">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-2">🤝 認識身心障礙者的多元性</h3>
+                        <p class="text-xl text-gray-700 mb-4">瞭解不同障礙類別的特質與需求。</p>
+                        <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=1483" target="_blank" onclick="event.stopPropagation()" class="inline-flex items-center gap-2 bg-teal-600 text-white px-5 py-3 rounded-xl font-bold hover:bg-teal-700 transition shadow-sm text-lg">
+                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                            開啟連結
+                        </a>
+                    </div>
+
+                     <div class="readable-block bg-teal-50 p-6 rounded-2xl border border-teal-100" data-text="身心障礙者議題報導注意事項。媒體報導與溝通的指引。">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-2">📝 身心障礙者議題報導注意事項</h3>
+                        <p class="text-xl text-gray-700 mb-4">媒體報導與溝通的指引。</p>
+                        <a href="https://crpd.sfaa.gov.tw/BulletinCtrl?func=getBulletin&p=b_2&c=G&bulletinId=160" target="_blank" onclick="event.stopPropagation()" class="inline-flex items-center gap-2 bg-teal-600 text-white px-5 py-3 rounded-xl font-bold hover:bg-teal-700 transition shadow-sm text-lg">
+                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                            開啟連結
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
     </main>
 
     <!-- 底部導航 - 更緊湊 -->
@@ -455,7 +547,7 @@
         </button>
         
         <span id="page-indicator" class="font-bold text-lg text-blue-700 bg-blue-50 px-3 py-1 rounded-md">
-            1 / 6
+            1 / 7
         </span>
 
         <button id="btn-next" class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-bold text-base transition disabled:opacity-50 disabled:cursor-not-allowed shadow-md">
@@ -469,7 +561,7 @@
 
         // 頁面控制變數
         let currentPage = 1;
-        const totalPages = 6;
+        const totalPages = 7; // 更新總頁數為 7
         
         // TTS 變數
         let synth = window.speechSynthesis;
